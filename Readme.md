@@ -3,8 +3,11 @@ Process managment API
 ******************************
 
 1) Shows all processes running (like ps -faxu)
+
 2) Run a process
+
 3) Repriorize a current process
+
 4) Kill a current process 
 
 *******************
