@@ -1,0 +1,23 @@
+************************************************
+******* MONITOREO Y GESTION DE REDES ***********
+************************************************
+************************************************
+
+
+Para poder probar la aplicación se utilizara la herramienta curl o algun plugin de browser como Postman o httpRequester
+
+
+1)Ver los procesos corriendo:
+$curl -i --user admin:supersecret localhost/index.php/api/processes/
+
+
+2) Lanzar un proceso Nuevo:
+$curl -i --user admin:supersecret -d 'cmd=nombre_comando' localhost/index.php/api/processes/
+
+
+3) Cambiar prioridad:
+$curl -i -X PUT --user admin:supersecret -d 'prio=n' localhost/index.php/api/processes/numero_pid/
+
+
+4) Eliminar un proceso:
+   $curl -i -X DELETE --user admin:supersecret localhost/index.php/api/processes/numero_pid
