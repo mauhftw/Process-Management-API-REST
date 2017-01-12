@@ -1,36 +1,43 @@
-******************************
-Process managment API 
-******************************
 
-1) Shows all processes running (like ps -faxu)
+## REST API for managing Linux processes 
 
-2) Run a process
+REST API capable of managing Linux processes (list, execute, renice, kill). API was developed with Laravel 4.2 and was served with Apache2 (Basic HTTP AUTH)
 
-3) Repriorize a current process
+## Setup
 
-4) Kill a current process 
+Run the following command. This command will create the database and the user's credentials
 
-*******************
-INSTRUCTIONS
-*******************
+- `php artisan migrate --seed`
 
-user: admin
-password supersecret
+## Credentials
 
-1) show all processes
-$curl -i --user admin:supersecret localhost/index.php/api/processes/
+- `user: admin`
+- `password supersecret`
+
+## Routes
 
 
-2) Run a process
-$curl -i --user admin:supersecret -d 'cmd=nombre_comando' localhost/index.php/api/processes/
+## Example
 
+1. show all processes
+https://locahost/index.php/api/processes?user=admin&password=supersecret
 
-3) Repriorize a process
-$curl -i -X PUT --user admin:supersecret -d 'prio=n' localhost/index.php/api/processes/numero_pid/
+2. Run a process
+https://locahost/index.php/api/processes?user=admin&password=supersecret
 
+formdata:
+- `name = cmd` 
+- `value = vi`
 
-4) Kill a process
-   $curl -i -X DELETE --user admin:supersecret localhost/index.php/api/processes/numero_pid
+3. Repriorize a process
+https://locahost/index.php/api/processes/4?user=admin&password=supersecret
+
+formdata:
+- `name = prio` 
+- `value = 5`
+
+4. kill a process
+https://locahost/index.php/api/processes/22?user=admin&password=supersecret
 
 
 
