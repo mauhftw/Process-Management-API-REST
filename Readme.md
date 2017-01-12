@@ -26,29 +26,29 @@ API is conformed by 4 routes:
 
 ## Example
 
-1. show all processes
+### Show all processes
 
-- `https://locahost/index.php/api/processes?user=admin&password=supersecret`
+- `https://locahost/api/processes?user=admin&password=supersecret`
 
-2. Run a process
+### Run a process
 
-- `https://locahost/index.php/api/processes?user=admin&password=supersecret`
+- `https://locahost/api/processes?user=admin&password=supersecret`
 
 formdata:
 - `name = cmd` 
 - `value = vi`
 
-3. Repriorize a process
+### Repriorize a process
 
-- `https://locahost/index.php/api/processes/4?user=admin&password=supersecret`
+- `https://locahost/api/processes/4?user=admin&password=supersecret`
 
 formdata:
 - `name = prio` 
 - `value = 5`
 
-4. kill a process
+### Kill a process
 
-- `https://locahost/index.php/api/processes/22?user=admin&password=supersecret`
+- `https://locahost/api/processes/22?user=admin&password=supersecret`
 
 
 
