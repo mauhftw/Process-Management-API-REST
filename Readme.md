@@ -19,9 +19,9 @@ Run the following command. This command will create the database and the user's 
 API is conformed by 4 routes:
 
 `| GET    | localhost/api/processes        | Shows all the processes                          |`
-| POST   | localhost/api/processes        | Run a process                                    |
-| POST   | localhost/api/processes/{id}   | Repriorize a process by                          |
-| DELETE | localhost/api/processes/{id}   | Deletes a certain process by id                  |
+`| POST   | localhost/api/processes        | Run a process                                    |`
+`| POST   | localhost/api/processes/{id}   | Repriorize a process by                          |`
+`| DELETE | localhost/api/processes/{id}   | Deletes a certain process by id                  |`
 
 
 ## Example
