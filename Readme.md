@@ -24,7 +24,7 @@ API is conformed by 4 routes:
 - `localhost/api/processes/{id}   -> Deletes a certain process by id`
 
 
-## Example
+## Examples
 
 ### Show all processes
 
