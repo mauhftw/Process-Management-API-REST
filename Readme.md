@@ -32,7 +32,7 @@ API is conformed by 4 routes:
 
 2. Run a process
 
--`https://locahost/index.php/api/processes?user=admin&password=supersecret`
+- `https://locahost/index.php/api/processes?user=admin&password=supersecret`
 
 formdata:
 - `name = cmd` 
