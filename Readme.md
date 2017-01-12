@@ -18,10 +18,10 @@ Run the following command. This command will create the database and the user's 
 
 API is conformed by 4 routes:
 
-- `localhost/api/processes        | Shows all the processes                          |`
-- `localhost/api/processes        | Run a process                                    |`
-- `localhost/api/processes/{id}   | Repriorize a process by                          |`
-- `localhost/api/processes/{id}   | Deletes a certain process by id                  |`
+- `localhost/api/processes        -> Shows all the processes`
+- `localhost/api/processes        -> Run a process`
+- `localhost/api/processes/{id}   -> Repriorize a process by`
+- `localhost/api/processes/{id}   -> Deletes a certain process by id`
 
 
 ## Example
