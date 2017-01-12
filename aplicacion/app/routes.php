@@ -13,13 +13,8 @@
 
 Route::group(array('prefix' => 'api/', 'before' => 'auth.basic'), function()
 {
-    Route::get('/', function() {
-	return View::make('hello');
-});
 
-Route::Resource('processes', 'ProcessesController');
-//Route::put('processes/{pid}/{prio}', 'ProcessesController@update');
-//Route::post('processes/{cmd}', 'ProcessesController@store');
+	Route::Resource('processes', 'ProcessesController');
 
 });
 
