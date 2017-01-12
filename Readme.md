@@ -16,28 +16,43 @@ Run the following command. This command will create the database and the user's 
 
 ## Routes
 
+API is conformed by 4 routes:
+
++--------+--------------------------------+--------------------------------------------------+
+| Method |          URI                   |                 ACTION                           |
++--------+----------+---------------------+--------------------------------------------------+                     
+| GET    | localhost/api/processes        | Shows all the processes                          |
+| POST   | localhost/api/processes        | Run a process                                    |
+| POST   | localhost/api/processes/{id}   | Repriorize a process by                          |
+| DELETE | localhost/api/processes/{id}   | Deletes a certain process by id                  |
++--------|--------------------------------+ -------------------------------------------------+
+
 
 ## Example
 
 1. show all processes
-https://locahost/index.php/api/processes?user=admin&password=supersecret
+
+- `https://locahost/index.php/api/processes?user=admin&password=supersecret`
 
 2. Run a process
-https://locahost/index.php/api/processes?user=admin&password=supersecret
+
+-`https://locahost/index.php/api/processes?user=admin&password=supersecret`
 
 formdata:
 - `name = cmd` 
 - `value = vi`
 
 3. Repriorize a process
-https://locahost/index.php/api/processes/4?user=admin&password=supersecret
+
+- `https://locahost/index.php/api/processes/4?user=admin&password=supersecret`
 
 formdata:
 - `name = prio` 
 - `value = 5`
 
 4. kill a process
-https://locahost/index.php/api/processes/22?user=admin&password=supersecret
+
+- `https://locahost/index.php/api/processes/22?user=admin&password=supersecret`
 
 
 
